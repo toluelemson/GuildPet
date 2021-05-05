@@ -21,14 +21,14 @@ public class GuildUser implements UserDetails {
 
 
     @SequenceGenerator(
-            name = "pet-owner_sequence",
-            sequenceName = "pet-owner_sequence",
+            name = "user_sequence",
+            sequenceName = "user_sequence",
             allocationSize = 1
     )
     @Id
     @GeneratedValue(
             strategy = GenerationType.SEQUENCE,
-            generator = "pet-owner_sequence"
+            generator = "user_sequence"
     )
     private Long id;
     private String firstName;
