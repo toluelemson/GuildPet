@@ -12,11 +12,7 @@ public class GuildUserService implements UserDetailsService {
     private final static String USER_NOT_FOUND_MSG =
             "Guild User with email %s not found";
 
-    private final GuildUserRepository guildUserRepository;
-
-    public GuildUserService(GuildUserRepository guildUserRepository) {
-        this.guildUserRepository = guildUserRepository;
-    }
+    private final GuildUserRepository guildUserRepository = null;
 
     @Override
     public UserDetails loadUserByUsername(String email)
