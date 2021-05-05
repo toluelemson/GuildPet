@@ -15,10 +15,4 @@ public interface GuildUserRepository
 
     Optional<GuildUser> findByEmail(String email);
 
-    @Transactional
-    @Modifying
-    @Query("UPDATE AppUser a " +
-            "SET a.enabled = TRUE WHERE a.email = ?1")
-    int enableAppUser(String email);
-
 }
