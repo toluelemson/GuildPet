@@ -61,6 +61,7 @@ public class GuildUser implements UserDetails {
 
     @Override
     public String getPassword() {
+
         return password;
     }
 
@@ -76,6 +77,20 @@ public class GuildUser implements UserDetails {
     public String getLastName() {
         return lastName;
     }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+
 
     @Override
     public boolean isAccountNonExpired() {
